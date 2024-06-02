@@ -11,22 +11,22 @@
   flex-direction: column;
 
   @include lg {
-    background-color: greenyellow;
+    // background-color: rgb(255, 255, 255);
     max-width: 1200px;
   }
 
   @include md {
-    background-color: black;
+    // background-color: black;
     max-width: 768px;
   }
 
   @include sm {
-    background-color: blue;
+    // background-color: blue;
     max-width: 640px;
   }
 
   .content{
-    background-color: pink;
+    // background-color: pink;
     flex: 1;
   }
 }
