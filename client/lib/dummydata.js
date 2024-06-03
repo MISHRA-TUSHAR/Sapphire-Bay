@@ -52,7 +52,7 @@ export const listData = [
     price: 1500,
     address: "567 Greater Kailash, Delhi",
     latitude: 28.5425,
-    longitude: 77.2390,
+    longitude: 77.239,
   },
   {
     id: 6,
