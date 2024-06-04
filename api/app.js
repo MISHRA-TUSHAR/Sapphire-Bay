@@ -1,12 +1,14 @@
 import express from "express";
+import cookieParser from "cookie-parser";
+import authRoute from "./routes/auth.route.js";
+const PORT = 8800;
 
-const app = express(); 
+const app = express();
+app.use(express.json());
 
-app.use("/api/test",(req,res)=>{
-  res.send("Hello World!");
+app.use("/api/auth", authRoute);
+app.use(cookieParser());
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`connected at port ${PORT}`);
 });
-
-app.listen(8800,()=>{
-  console.log("Backend server is running!");
-});
-

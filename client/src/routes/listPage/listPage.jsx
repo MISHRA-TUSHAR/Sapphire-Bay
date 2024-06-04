@@ -1,4 +1,4 @@
-import { listData } from '../../../lib/dummydata'
+import { listData } from '../../lib/dummydata'
 import Filter from '../../components/filter/Filter';
 import Card from "../../components/card/Card"
 import Map from "../../components/map/Map"
